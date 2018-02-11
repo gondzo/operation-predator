@@ -226,23 +226,23 @@
             group.append('text')
                 .text(line)
                 .attr('x', position.x + (point.numberOfCells > 1 ? (EDGE_LENGTH_OF_CELL * 2 + MARGIN_OF_CELL) : EDGE_LENGTH_OF_CELL) / 2)
-                .attr('y', position.y + (45 - (8 * (titleLines.length - 1))) + 20 * index)
+                .attr('y', position.y + (65 - (8 * (titleLines.length - 1))) + 20 * index)
                 .attr('text-anchor', 'middle')
                 .attr('style', 'font-size: ' + (26 - (titleLines.length * 3) - (line.length > 10 ? 5 : 0)) + 'px;');
         });
 
-        /**
-         * process tech type text
-         */
-        var specLines = sliceString(point[this._desc], '/');
-        _.forEach(specLines, function (line, index) {
-            group.append('text')
-                .text(line)
-                .attr('x', position.x + (point.numberOfCells > 1 ? (EDGE_LENGTH_OF_CELL * 2 + MARGIN_OF_CELL) : EDGE_LENGTH_OF_CELL) / 2)
-                .attr('y', position.y + 90 + 15 * index)
-                .attr('text-anchor', 'middle')
-                .attr('style', 'font-size: 15px;');
-        });
+        // /**
+        //  * process tech type text
+        //  */
+        // var specLines = sliceString(point[this._desc], '/');
+        // _.forEach(specLines, function (line, index) {
+        //     group.append('text')
+        //         .text(line)
+        //         .attr('x', position.x + (point.numberOfCells > 1 ? (EDGE_LENGTH_OF_CELL * 2 + MARGIN_OF_CELL) : EDGE_LENGTH_OF_CELL) / 2)
+        //         .attr('y', position.y + 90 + 15 * index)
+        //         .attr('text-anchor', 'middle')
+        //         .attr('style', 'font-size: 15px;');
+        // });
     };
 
     /**

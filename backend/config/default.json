@@ -1,0 +1,23 @@
+{
+  "mock": false,
+  "looksOptions":{
+    "uri": "https://topcoder.looker.com/looks/QWMnPdYcHvrRj8M6CFXQ97vG83fNC9DK.json?apply_formatting=true",
+    "json": true
+  },
+  "stackFlowsOptions":{
+    "uri":"https://api.stackexchange.com/2.2/tags?page=1&pagesize=100&order=desc&sort=popular&site=stackoverflow",
+    "gzip":true,
+    "json": true
+  },
+  "elasticSearchConfig": {
+    "index": "tech2",
+    "maxPageSize": 200,
+    "connectionConfig": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "service": "es",
+      "region": "us-east-1",
+      "host": ""
+    }
+  }
+}

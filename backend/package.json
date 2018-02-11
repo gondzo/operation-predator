@@ -1,0 +1,26 @@
+{
+  "name": "f2f",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-es": "^1.5.3",
+    "bluebird": "^3.4.6",
+    "co": "^4.6.0",
+    "co-retry": "^1.0.5",
+    "config": "^1.24.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.2",
+    "moment": "^2.20.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.16.0"
+  }
+}

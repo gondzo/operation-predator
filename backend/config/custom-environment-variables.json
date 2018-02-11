@@ -1,0 +1,17 @@
+{
+  "looksOptions":{
+    "uri": "LOOKS_URL"
+  },
+  "stackFlowsOptions":{
+    "uri":"STACKLOFWS_URL"
+  },
+  "mock": "MOCK",
+  "elasticSearchConfig": {
+    "connectionConfig": {
+      "accessKeyId": "AWS_ES_ACCESS_KEY_ID",
+      "secretAccessKey": "AWS_ES_SECRET_ACCESS_KEY",
+      "region": "AWS_ES_REGION",
+      "host": "AWS_ES_HOST"
+    }
+  }
+}

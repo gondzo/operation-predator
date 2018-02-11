@@ -1,0 +1,206 @@
+[
+  {
+    "challenge_technology.name": "Node.js",
+    "challenge.count": "108"
+  },
+  {
+    "challenge_technology.name": "JavaScript",
+    "challenge.count": "98"
+  },
+  {
+    "challenge_technology.name": "CSS",
+    "challenge.count": "82"
+  },
+  {
+    "challenge_technology.name": "HTML5",
+    "challenge.count": "80"
+  },
+  {
+    "challenge_technology.name": "Java",
+    "challenge.count": "57"
+  },
+  {
+    "challenge_technology.name": "Angular.js",
+    "challenge.count": "54"
+  },
+  {
+    "challenge_technology.name": "HTML",
+    "challenge.count": "54"
+  },
+  {
+    "challenge_technology.name": "REST",
+    "challenge.count": "39"
+  },
+  {
+    "challenge_technology.name": ".NET",
+    "challenge.count": "27"
+  },
+  {
+    "challenge_technology.name": "Other",
+    "challenge.count": "26"
+  },
+  {
+    "challenge_technology.name": "ReactJS",
+    "challenge.count": "24"
+  },
+  {
+    "challenge_technology.name": "C#",
+    "challenge.count": "17"
+  },
+  {
+    "challenge_technology.name": "Docker",
+    "challenge.count": "16"
+  },
+  {
+    "challenge_technology.name": "Bootstrap",
+    "challenge.count": "16"
+  },
+  {
+    "challenge_technology.name": "JSON",
+    "challenge.count": "15"
+  },
+  {
+    "challenge_technology.name": "jQuery",
+    "challenge.count": "14"
+  },
+  {
+    "challenge_technology.name": "API",
+    "challenge.count": "14"
+  },
+  {
+    "challenge_technology.name": "MySQL",
+    "challenge.count": "12"
+  },
+  {
+    "challenge_technology.name": "Salesforce",
+    "challenge.count": "12"
+  },
+  {
+    "challenge_technology.name": "SQL",
+    "challenge.count": "12"
+  },
+  {
+    "challenge_technology.name": "SQL Server",
+    "challenge.count": "10"
+  },
+  {
+    "challenge_technology.name": "Android",
+    "challenge.count": "10"
+  },
+  {
+    "challenge_technology.name": "PostgreSQL",
+    "challenge.count": "9"
+  },
+  {
+    "challenge_technology.name": "iOS",
+    "challenge.count": "9"
+  },
+  {
+    "challenge_technology.name": "Apex",
+    "challenge.count": "8"
+  },
+  {
+    "challenge_technology.name": "ASP.NET",
+    "challenge.count": "7"
+  },
+  {
+    "challenge_technology.name": "MongoDB",
+    "challenge.count": "7"
+  },
+  {
+    "challenge_technology.name": "Swift",
+    "challenge.count": "6"
+  },
+  {
+    "challenge_technology.name": "Data Science",
+    "challenge.count": "6"
+  },
+  {
+    "challenge_technology.name": "Active Directory",
+    "challenge.count": "6"
+  },
+  {
+    "challenge_technology.name": "Vertica",
+    "challenge.count": "5"
+  },
+  {
+    "challenge_technology.name": "Spring",
+    "challenge.count": "3"
+  },
+  {
+    "challenge_technology.name": "Twitter Bootstrap",
+    "challenge.count": "3"
+  },
+  {
+    "challenge_technology.name": "Google API",
+    "challenge.count": "3"
+  },
+  {
+    "challenge_technology.name": "JQuery",
+    "challenge.count": "3"
+  },
+  {
+    "challenge_technology.name": "C",
+    "challenge.count": "3"
+  },
+  {
+    "challenge_technology.name": "WPF",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "Java Application",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "JPA",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "C++",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "Xcode",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "AJAX",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "IIS",
+    "challenge.count": "2"
+  },
+  {
+    "challenge_technology.name": "Maven",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "NoSQL",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "Visualforce",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "Windows Communication Foundation",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "EJB",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "Web Application",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "Windows Server",
+    "challenge.count": "1"
+  },
+  {
+    "challenge_technology.name": "",
+    "challenge.count": "362"
+  }
+]

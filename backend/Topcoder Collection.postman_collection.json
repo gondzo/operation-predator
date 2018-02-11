@@ -1,0 +1,72 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Topcoder Collection",
+		"_postman_id": "94ba7f1f-2119-4953-6a0c-ce3588f46537",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search without Date Specified",
+			"request": {
+				"url": "http://localhost:3000/search",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"template\": \"twitter_elastic_example\",\r\n  \"settings\": {\r\n    \"number_of_shards\": 1,\r\n    \"number_of_replicas\": 0\r\n  },\r\n  \"mappings\": {\r\n    \"_default_\": {\r\n      \"_all\": {\r\n        \"enabled\": true\r\n      },\r\n      \"properties\": {\r\n        \"timestamp\": {\r\n          \"type\": \"date\",\r\n          \"format\": \"epoch_millis\"\r\n        },\r\n        \"text\": {\r\n          \"type\": \"text\"\r\n        },\r\n        \"username\": {\r\n          \"type\": \"string\"\r\n        },\r\n        \"lang\": {\r\n        \t\"type\": \"string\"\r\n        },\r\n        \"coordinates\": {\r\n              \"type\": \"geo_point\"\r\n        }\r\n      },\r\n      \"dynamic_templates\": [\r\n        {\r\n          \"string_template\": {\r\n            \"match\": \"*\",\r\n            \"match_mapping_type\": \"string\",\r\n            \"mapping\": {\r\n              \"type\": \"keyword\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    }\r\n}\r\n}\r\n"
+				},
+				"description": "Performs a search without a date specified."
+			},
+			"response": []
+		},
+		{
+			"name": "Search with Date Specified",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/search?date=1-13-2018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "1-13-2018",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"template\": \"twitter_elastic_example\",\r\n  \"settings\": {\r\n    \"number_of_shards\": 1,\r\n    \"number_of_replicas\": 0\r\n  },\r\n  \"mappings\": {\r\n    \"_default_\": {\r\n      \"_all\": {\r\n        \"enabled\": true\r\n      },\r\n      \"properties\": {\r\n        \"timestamp\": {\r\n          \"type\": \"date\",\r\n          \"format\": \"epoch_millis\"\r\n        },\r\n        \"text\": {\r\n          \"type\": \"text\"\r\n        },\r\n        \"username\": {\r\n          \"type\": \"string\"\r\n        },\r\n        \"lang\": {\r\n        \t\"type\": \"string\"\r\n        },\r\n        \"coordinates\": {\r\n              \"type\": \"geo_point\"\r\n        }\r\n      },\r\n      \"dynamic_templates\": [\r\n        {\r\n          \"string_template\": {\r\n            \"match\": \"*\",\r\n            \"match_mapping_type\": \"string\",\r\n            \"mapping\": {\r\n              \"type\": \"keyword\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    }\r\n}\r\n}\r\n"
+				},
+				"description": "Performs a search with a date specified."
+			},
+			"response": []
+		},
+		{
+			"name": "Force Index",
+			"request": {
+				"url": "http://localhost:3000/force_index",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"template\": \"twitter_elastic_example\",\r\n  \"settings\": {\r\n    \"number_of_shards\": 1,\r\n    \"number_of_replicas\": 0\r\n  },\r\n  \"mappings\": {\r\n    \"_default_\": {\r\n      \"_all\": {\r\n        \"enabled\": true\r\n      },\r\n      \"properties\": {\r\n        \"timestamp\": {\r\n          \"type\": \"date\",\r\n          \"format\": \"epoch_millis\"\r\n        },\r\n        \"text\": {\r\n          \"type\": \"text\"\r\n        },\r\n        \"username\": {\r\n          \"type\": \"string\"\r\n        },\r\n        \"lang\": {\r\n        \t\"type\": \"string\"\r\n        },\r\n        \"coordinates\": {\r\n              \"type\": \"geo_point\"\r\n        }\r\n      },\r\n      \"dynamic_templates\": [\r\n        {\r\n          \"string_template\": {\r\n            \"match\": \"*\",\r\n            \"match_mapping_type\": \"string\",\r\n            \"mapping\": {\r\n              \"type\": \"keyword\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    }\r\n}\r\n}\r\n"
+				},
+				"description": "Performs a force index of the data without needing to wait for the cron job."
+			},
+			"response": []
+		}
+	]
+}

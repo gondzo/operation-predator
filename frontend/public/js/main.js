@@ -25,7 +25,7 @@
     });
 
     function whenTheCellShouldTake2Place(dataPoint) {
-        return ~dataPoint[config.sortByColumns.techNameKey].indexOf('and') ? 2 : 1;
+        return (dataPoint[config.sortByColumns.techNameKey].indexOf(' ')>0 && dataPoint[config.sortByColumns.hotKey]<0 )? 2 : 1;
     }
 
     //redraw function. used when selecting a specify technology type
@@ -47,7 +47,7 @@
      */
     hotMap
         .fetchIndicator('indicator.svg')
-        .fetchData(config.spreadsheetDataSource)
+        .fetchData(config.serverDataSource)
         .sortData(config.sortByColumns)
         .countCells(whenTheCellShouldTake2Place)
         .drawMap()

@@ -1,0 +1,34 @@
+service: scheduled-data-indexer
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    AWS_ES_ACCESS_KEY_ID: ${file(./serverless.env.yml):${opt:stage}.AWS_ES_ACCESS_KEY_ID}
+    AWS_ES_ACCESS_KEY_ID: ${file(./serverless.env.yml):${opt:stage}.AWS_ES_SECRET_ACCESS_KEY}
+    AWS_ES_ACCESS_KEY_ID: ${file(./serverless.env.yml):${opt:stage}.AWS_ES_REGION}
+    AWS_ES_ACCESS_KEY_ID: ${file(./serverless.env.yml):${opt:stage}.AWS_ES_HOST}
+
+functions:
+  indexer:
+    handler: app.index
+    events:
+      - schedule: cron(15 12 * * ? *)
+      - http:
+          path: force_index
+          method: get
+
+  api:
+    handler: app.api
+    events:
+      - http:
+          path: search
+          method: get
+          cors: true
+          request:
+            parameters:
+              querystrings:
+                date: false

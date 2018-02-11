@@ -70,7 +70,8 @@ header#main-header div #main-menu-panel {
   -webkit-flex-direction: column;
   position: absolute;
   top: 90px;
-  margin-left: -50px;
+  left: 20px;
+  margin: 0 auto;
   padding: 10px;
   background: rgba(223, 227, 235, 0.9);
   border-radius: 10px;

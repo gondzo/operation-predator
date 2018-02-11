@@ -7,7 +7,7 @@
  * @author lovefreya
  */
 
-(function (global, Tabletop, async, _, ViewManager) {
+(function (global, Datasource, async, _, ViewManager) {
     'use strict';
 
     var MARK_CLASS = 'marked-ready';
@@ -74,18 +74,17 @@
     HotMap.prototype.fetchData = function (url) {
         var self = this;
         self._functionStack.push(function (cb) {
-            Tabletop.init({
-                key: url,
-                callback: function (data, e) {
+            Datasource.init({
+                url: url,
+                callback: function (data, err) {
                     if (data) {
                         self._dataPoints = data;
                         self._allData = _.cloneDeep(data);
                         self._viewManager.finishLoading();
                         return cb();
                     }
-                    cb(e);
-                },
-                simpleSheet: true
+                    cb(err);
+                }
             });
         });
         return self;
@@ -246,4 +245,4 @@
 
     global.HotMap = HotMap;
 
-})(this, this.Tabletop, this.async, this._, this.ViewManager);
+})(this, this.Datasource, this.async, this._, this.ViewManager);
