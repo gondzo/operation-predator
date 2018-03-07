@@ -49,7 +49,8 @@ function buildArray(looks, stackflows, ready, looksIndex, stackflowsIndex) {
             tcCommunityReady: ready,
             count: existLooks ? Number(looksIndex[name]['challenge.count']) :
                 Number(stackflowsIndex[name].count),
-            widelyUsedonTc:  existLooks ? 'yes' : 'no'
+            widelyUsedonTc:  existLooks ? 'yes' : 'no',
+            type: "N/A"
         });
     });
     return values;
